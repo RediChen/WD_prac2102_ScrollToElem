@@ -1,27 +1,54 @@
-@import "./var" ;
+@import "./var";
 
 * {
     margin: 0;
     padding: 0;
 }
-a {
-    text-decoration: none;
-    &:link, &:visited {
-        color : $color-prim-light ;
-    }
-    &:hover {
-        opacity: 0.8;
-    }
-    &:active {
-        filter: invert(10%) ;
-    }
-}
+
 body {
-    background-color: $color-prim-med ;
+    background-color: $color-prim-med;
 }
 
 nav {
-    height: 75px;
+    $h-nav: 75px;
+    height: $h-nav;
     background-color: $color-prim-dark;
-    color :#cfe2e2 ;
+    color: #cfe2e2;
+
+    a {
+        text-decoration: none;
+        font-family: Helvatica, sans-serif;
+        font-weight: bolder;
+        font-size: 32px;
+        line-height: $h-nav;
+        padding: 0 1em;
+
+        &:link,
+        &:visited {
+            color: $color-prim-light;
+        }
+        &:hover {
+            opacity: 0.8;
+        }
+        &:active {
+            filter: invert(10%);
+        }
+    }
+}
+section {
+    height: 100vh;
+
+    &:nth-of-type(2) {
+        background-color: rgba($color-2, 0.6);
+    }
+    &:nth-of-type(3) {
+        background-color: rgba($color-3, 0.6);
+    }
+
+    h1 {
+        text-align: center;
+        line-height: 100vh;
+        font-size: 72px;
+        color: $color-prim-dark ;
+    }
 }

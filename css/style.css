@@ -3,23 +3,6 @@
   padding: 0;
 }
 
-a {
-  text-decoration: none;
-}
-
-a:link, a:visited {
-  color: #cfe2e2;
-}
-
-a:hover {
-  opacity: 0.8;
-}
-
-a:active {
-  -webkit-filter: invert(10%);
-          filter: invert(10%);
-}
-
 body {
   background-color: cadetBlue;
 }
@@ -28,5 +11,46 @@ nav {
   height: 75px;
   background-color: #304f50;
   color: #cfe2e2;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: Helvatica, sans-serif;
+  font-weight: bolder;
+  font-size: 32px;
+  line-height: 75px;
+  padding: 0 1em;
+}
+
+nav a:link, nav a:visited {
+  color: #cfe2e2;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+nav a:active {
+  -webkit-filter: invert(10%);
+          filter: invert(10%);
+}
+
+section {
+  height: 100vh;
+}
+
+section:nth-of-type(2) {
+  background-color: rgba(100, 149, 237, 0.6);
+}
+
+section:nth-of-type(3) {
+  background-color: rgba(144, 238, 144, 0.6);
+}
+
+section h1 {
+  text-align: center;
+  line-height: 100vh;
+  font-size: 72px;
+  color: #304f50;
 }
 /*# sourceMappingURL=style.css.map */
