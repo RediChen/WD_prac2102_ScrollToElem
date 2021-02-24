@@ -6,13 +6,16 @@
 }
 
 body {
-    background-color: $color-prim-med;
+    background-color: $color-1-med;
 }
 
 nav {
     $h-nav: 75px;
     height: $h-nav;
-    background-color: $color-prim-dark;
+    width: 100%;
+    background-color: $color-1-dark;
+    position: sticky;
+    top: 0;
     color: #cfe2e2;
 
     a {
@@ -25,10 +28,10 @@ nav {
 
         &:link,
         &:visited {
-            color: $color-prim-light;
+            color: $color-1-light;
         }
         &:hover {
-            opacity: 0.8;
+            color: white;
         }
         &:active {
             filter: invert(10%);
@@ -38,17 +41,14 @@ nav {
 section {
     height: 100vh;
 
-    &:nth-of-type(2) {
-        background-color: rgba($color-2, 0.6);
-    }
-    &:nth-of-type(3) {
-        background-color: rgba($color-3, 0.6);
+    &:nth-of-type(even) {
+        background-color: rgba($color-2-med, 0.6);
     }
 
     h1 {
         text-align: center;
         line-height: 100vh;
         font-size: 72px;
-        color: $color-prim-dark ;
+        color: $color-1-dark ;
     }
 }

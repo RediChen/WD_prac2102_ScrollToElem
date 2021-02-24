@@ -9,7 +9,11 @@ body {
 
 nav {
   height: 75px;
+  width: 100%;
   background-color: #304f50;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   color: #cfe2e2;
 }
 
@@ -27,7 +31,7 @@ nav a:link, nav a:visited {
 }
 
 nav a:hover {
-  opacity: 0.8;
+  color: white;
 }
 
 nav a:active {
@@ -39,11 +43,7 @@ section {
   height: 100vh;
 }
 
-section:nth-of-type(2) {
-  background-color: rgba(100, 149, 237, 0.6);
-}
-
-section:nth-of-type(3) {
+section:nth-of-type(even) {
   background-color: rgba(144, 238, 144, 0.6);
 }
 
