@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  color: #cfe2e2;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+a:active {
+  -webkit-filter: invert(10%);
+          filter: invert(10%);
+}
+
+body {
+  background-color: cadetBlue;
+}
+
+nav {
+  height: 75px;
+  background-color: #304f50;
+  color: #cfe2e2;
+}
+/*# sourceMappingURL=style.css.map */

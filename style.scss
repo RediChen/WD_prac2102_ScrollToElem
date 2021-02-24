@@ -1,0 +1,27 @@
+@import "./var" ;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    &:link, &:visited {
+        color : $color-prim-light ;
+    }
+    &:hover {
+        opacity: 0.8;
+    }
+    &:active {
+        filter: invert(10%) ;
+    }
+}
+body {
+    background-color: $color-prim-med ;
+}
+
+nav {
+    height: 75px;
+    background-color: $color-prim-dark;
+    color :#cfe2e2 ;
+}
