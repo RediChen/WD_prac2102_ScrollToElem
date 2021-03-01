@@ -7,7 +7,7 @@
 
 # 使用說明。
 ## 連結CDN
-連結此CDN之前，請確認已經連結jQuery的函式庫。
+連結此CDN之前，請確認也已經連結jQuery的函式庫。
 接著即可將下列的link code置於body結束標籤之前。
 ```
     <script src="https://rediichen.github.io/WD_prac2102_ScrollToElem/main.js"></script>
