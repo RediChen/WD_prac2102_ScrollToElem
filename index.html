@@ -11,8 +11,8 @@
 <body>
     <nav>
         <a href="#area1" data-s2-target="area1" data-s2-duration="600">LINK1</a>
-        <a href="#area2" data-s2-target="area2" data-s2-duration="1000">LINK2</a>
-        <a href="#area3" data-s2-target="area3" data-s2-duration="1200">LINK3</a>
+        <a href="#area2" data-s2-target="area2" data-s2-duration="1000" data-s2-offset="75">LINK2</a>
+        <a href="#area3" data-s2-target="area3" data-s2-duration="1200" data-s2-offset="75">LINK3</a>
     </nav>
     <section id="area1">
         <div>
@@ -29,7 +29,8 @@
             <h1>區塊3</h1>
         </div>
     </section>
-
+    <!-- 返回最上方按鈕 -->
+    <a id="arrow" data-s2-target="area1" data-s2-duration="500" data-ar-top="400" data-ar-time="400"></a>
 
     <!--  CDN of jQuery  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

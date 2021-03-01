@@ -1,4 +1,5 @@
 @import "./var";
+$h-nav: 75px;
 
 * {
     margin: 0;
@@ -10,7 +11,6 @@ body {
 }
 
 nav {
-    $h-nav: 75px;
     height: $h-nav;
     width: 100%;
     background-color: $color-1-dark;
@@ -50,5 +50,23 @@ section {
         line-height: 100vh;
         font-size: 72px;
         color: $color-1-dark ;
+    }
+}
+#arrow {
+    width: 0;
+    height: 0;
+    border-width: 25px 20px ;
+    border-style: solid;
+    border-color: transparent transparent #e6ffe6 ;
+    border-radius: 10%;
+
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+
+    &:hover {
+        filter: drop-shadow(0, 0, 10px, #f1fff1),
+        brightness(120%);
     }
 }

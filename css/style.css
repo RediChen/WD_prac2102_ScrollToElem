@@ -53,4 +53,22 @@ section h1 {
   font-size: 72px;
   color: #304f50;
 }
+
+#arrow {
+  width: 0;
+  height: 0;
+  border-width: 25px 20px;
+  border-style: solid;
+  border-color: transparent transparent #e6ffe6;
+  border-radius: 10%;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+}
+
+#arrow:hover {
+  -webkit-filter: drop-shadow(0, 0, 10px, #f1fff1), brightness(120%);
+          filter: drop-shadow(0, 0, 10px, #f1fff1), brightness(120%);
+}
 /*# sourceMappingURL=style.css.map */
