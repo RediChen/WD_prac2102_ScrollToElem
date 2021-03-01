@@ -49,13 +49,13 @@ $(window).scroll(function () {
     var windowTop = $(this).scrollTop();
     // console.log("此時上方座標：" + windowTop) ;
     //this log幫助收集估查位置的座標
-    var top = arrow.attr("data-ar-top");
-    var time = parseInt(arrow.attr("data-ar-time"));
+    var top = arrow.attr("data-s2-top");
+    var time = parseInt(arrow.attr("data-s2-time"));
     // console.log("界線座標：" + top) ;
     // console.log("設定時間：" + time) ;
     
-    if (windowTop >= top) arrow.stop().fadeIn() ;
-    else arrow.stop().fadeOut() ;
+    if (windowTop >= top) arrow.stop().fadeIn(time) ;
+    else arrow.stop().fadeOut(time) ;
     //UX實務：以防使用者白目上上下下玩特效，讓每次動作前的動作都取消。
 });
 
