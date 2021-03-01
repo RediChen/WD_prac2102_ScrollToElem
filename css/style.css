@@ -57,7 +57,7 @@ section h1 {
 #arrow {
   width: 0;
   height: 0;
-  border-width: 25px 20px;
+  border-width: 15px 10px;
   border-style: solid;
   border-color: transparent transparent #e6ffe6;
   border-radius: 10%;
@@ -65,10 +65,12 @@ section h1 {
   right: 20px;
   bottom: 20px;
   cursor: pointer;
+  -webkit-transition: brightness, 0.5s;
+  transition: brightness, 0.5s;
 }
 
 #arrow:hover {
-  -webkit-filter: drop-shadow(0, 0, 10px, #f1fff1), brightness(120%);
-          filter: drop-shadow(0, 0, 10px, #f1fff1), brightness(120%);
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
 }
 /*# sourceMappingURL=style.css.map */

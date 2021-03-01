@@ -54,8 +54,9 @@ $(window).scroll(function () {
     // console.log("界線座標：" + top) ;
     // console.log("設定時間：" + time) ;
     
-    if (windowTop >= top) arrow.fadeIn() ;
-    else arrow.fadeOut() ;
+    if (windowTop >= top) arrow.stop().fadeIn() ;
+    else arrow.stop().fadeOut() ;
+    //UX實務：以防使用者白目上上下下玩特效，讓每次動作前的動作都取消。
 });
 
 //目標座標450

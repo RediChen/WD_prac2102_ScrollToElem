@@ -55,18 +55,22 @@ section {
 #arrow {
     width: 0;
     height: 0;
-    border-width: 25px 20px ;
+    border-width: 15px 10px ;
     border-style: solid;
     border-color: transparent transparent #e6ffe6 ;
     border-radius: 10%;
+    // width: 32px;
+    // height: 32px;
+    // background-image: url(../toTopArrow.png);
+    // z-index: 3;
 
     position: fixed;
     right: 20px;
     bottom: 20px;
     cursor: pointer;
+    transition: brightness, 0.5s;
 
     &:hover {
-        filter: drop-shadow(0, 0, 10px, #f1fff1),
-        brightness(120%);
+        filter : brightness(120%);
     }
 }
