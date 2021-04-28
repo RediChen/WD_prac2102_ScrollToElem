@@ -17,16 +17,20 @@ $("a").each(function () {
     //(1) UX : 插入stop() 讓點選其他按鈕可以中止機制
     //(2) html, body 是為了跨平台的以防萬一
     $(this).click(function (e) {
-        e.preventDefault();//關閉 a 原本的連結功能
+    e.preventDefault();//關閉 a 原本的連結功能
         $("html, body").stop().animate({
             scrollTop: posY
         }, 800);
     });
-    //(3) UX : 讓滾輪可以中止機制
-    $("html, body").on("mousewheel", function () {
-        $("html, body").stop();
-    });
 });
+//(3) UX : 讓滾輪可以中止機制
+// $("html, body").on("mousewheel", function () {
+//     console.log('停下來！！！');
+//     $("html, body").stop();
+// });
+//! (21.04)以上中止機制，不知為何已經不能用了
+/* 是連老師當初的示範網站，這個功能也不能用。 */
+
 //接下來是tothetop按鈕的顯示/消失設定
 var tothetop = $("#tothetop");
 
@@ -45,17 +49,19 @@ $(window).scroll(function () {
     else tothetop.stop().fadeOut(time);
     //UX ：以防使用者白目上上下下玩特效，讓每次動作前的動作都取消。
 
-    //設定預設值
-    var target = $(this).attr("data-s2-target");
-    if(target) return 0;
+});
+//設定tothetop的預設值
+(function () {
+    var target = $(tothetop).attr("data-s2-target");
+    if (target) return 0;
     //有採用target功能則不執行以下指令
-    $(this).click(function (e) {
+    $(tothetop).click(function (e) {
         e.preventDefault();
         $("html, body").stop().animate({
             scrollTop: 0
         }, 800);
     });
-    $("html, body").on("mousewheel", function () {
-        $("html, body").stop();
-    });
-});
+    // $("html, body").on("mousewheel", function () {
+    //     $("html, body").stop();
+    // });
+}) () ;
