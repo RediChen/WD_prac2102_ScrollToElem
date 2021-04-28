@@ -2,10 +2,8 @@ $("a").each(function () {
     //* Stage I : 收集參數
     var target = $(this).attr("data-s2-target");
     if (!target) return true;// 沒有設定此參數的就直接換下一位
-
     var position = $("#" + target).offset();
     // (1) offset 元素在網頁上的座標
-
     var posAdj = parseInt($(this).attr("data-s2-offset"));
     // (2) posAdj = position adjust 微調目標的座標
     //TODO 希望可以自動算效果的時間
@@ -61,5 +59,3 @@ $(window).scroll(function () {
         $("html, body").stop();
     });
 });
-    //最後的註解：console.log應在開發完畢後刪除
-    //以免造成使用時浪費瀏覽器的資源。
